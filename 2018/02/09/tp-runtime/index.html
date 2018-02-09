@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://pangudev.github.io">
-  <title>研发一部第一篇博文 | 研发一部博客</title>
+  <title>ThinkPHP框架Runtime错误解决方法 | 研发一部博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
-<meta name="keywords" content="每周一课,随笔札记">
+  <meta name="description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法：  FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请走">
+<meta name="keywords" content="每周一课">
 <meta property="og:type" content="article">
-<meta property="og:title" content="研发一部第一篇博文">
-<meta property="og:url" content="https://pangudev.github.io/2018/02/07/foreword/index.html">
+<meta property="og:title" content="ThinkPHP框架Runtime错误解决方法">
+<meta property="og:url" content="https://pangudev.github.io/2018/02/09/tp-runtime/index.html">
 <meta property="og:site_name" content="研发一部博客">
-<meta property="og:description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
-<meta property="og:updated_time" content="2018-02-08T06:00:33.161Z">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法：  FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请走">
+<meta property="og:updated_time" content="2018-02-09T04:20:02.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="研发一部第一篇博文">
-<meta name="twitter:description" content="附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面">
+<meta name="twitter:title" content="ThinkPHP框架Runtime错误解决方法">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法：  FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请走">
   
   
     <link rel="icon" href="/favicon.png">
@@ -154,39 +154,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-foreword" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-tp-runtime" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      研发一部第一篇博文
+      ThinkPHP框架Runtime错误解决方法
     </h1>
   
 
         
-        <a href="/2018/02/07/foreword/" class="archive-article-date">
-  	<time datetime="2018-02-07T07:50:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-07</time>
+        <a href="/2018/02/09/tp-runtime/" class="archive-article-date">
+  	<time datetime="2018-02-09T04:15:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>该博文是hexo+github搭建。</p>
-<p>hexo有多种主题选择。</p>
-<p>使用github pages服务搭建博客的优点：</p>
+        <p>&ensp;&ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime…</p>
+<p>例如：<font style="color:red;">RAGE_WRITE<em>ERROR</em>:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php</font></p>
+<p>解决方法：</p>
 <ol>
-<li>全是静态文件，访问速度快；</li>
-<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li>
-<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
-<li>等等；</li>
+<li><strong>FTP登录客户空间，删除根目录下Runtime文件夹</strong>（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请走下一步<a id="more"></a></li>
+<li><strong>查看空间是否满了</strong>（如果空间满了可以及时客户沟通，及时对空间进行扩容，如果空间没满，请走下一步）</li>
+<li><strong>保证runtime文件夹权限是777</strong> （看runtime文件夹的权限是否是777，不是的话，请联系支持部同学进行授权）</li>
 </ol>
 
       
@@ -224,26 +218,11 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">每周一课</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">随笔札记</a>
-        		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/序言//" class="article-tag-list-link color3">序言</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -293,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/02/07/foreword/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/02/09/tp-runtime/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,18 +286,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/02/09/tp-runtime/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          ThinkPHP框架Runtime错误解决方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/02/07/example/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">示例</div>
+    <a href="/2018/02/07/foreword/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">研发一部第一篇博文</div>
       <i class="icon-circle-right"></i>
     </a>
   
