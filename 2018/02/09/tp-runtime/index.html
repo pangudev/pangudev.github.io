@@ -6,22 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://pangudev.github.io">
-  <title>《每周一课》第二期 | 研发一部博客</title>
+  <title>ThinkPHP框架Runtime错误解决方法 | 研发一部博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="img{     width:80%;     padding-left: 20%; }     有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？ 例如：/img/2.png ####后台已推荐，前台死活不显示！！！##### 解决方法：/img/3.png ####录完资料一定记得开启“开启同步“这个按钮，才能保证">
+  <meta name="description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法： 1.FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请">
 <meta name="keywords" content="每周一课">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《每周一课》第二期">
-<meta property="og:url" content="https://pangudev.github.io/2018/02/09/2/2/index.html">
+<meta property="og:title" content="ThinkPHP框架Runtime错误解决方法">
+<meta property="og:url" content="https://pangudev.github.io/2018/02/09/tp-runtime/index.html">
 <meta property="og:site_name" content="研发一部博客">
-<meta property="og:description" content="img{     width:80%;     padding-left: 20%; }     有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？ 例如：/img/2.png ####后台已推荐，前台死活不显示！！！##### 解决方法：/img/3.png ####录完资料一定记得开启“开启同步“这个按钮，才能保证">
-<meta property="og:image" content="https://pangudev.github.io/2018/02/09/2/2/yilia/source/1.png">
-<meta property="og:image" content="https://pangudev.github.io/img/2.png">
-<meta property="og:updated_time" content="2018-04-04T06:08:57.784Z">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法： 1.FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请">
+<meta property="og:updated_time" content="2018-02-11T01:27:31.571Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《每周一课》第二期">
-<meta name="twitter:description" content="img{     width:80%;     padding-left: 20%; }     有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？ 例如：/img/2.png ####后台已推荐，前台死活不显示！！！##### 解决方法：/img/3.png ####录完资料一定记得开启“开启同步“这个按钮，才能保证">
-<meta name="twitter:image" content="https://pangudev.github.io/2018/02/09/2/2/yilia/source/1.png">
+<meta name="twitter:title" content="ThinkPHP框架Runtime错误解决方法">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime… 例如：RAGE_WRITEERROR:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php 解决方法： 1.FTP登录客户空间，删除根目录下Runtime文件夹（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请">
   
   
     <link rel="icon" href="/favicon.png">
@@ -157,19 +154,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2/2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-tp-runtime" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      《每周一课》第二期
+      ThinkPHP框架Runtime错误解决方法
     </h1>
   
 
         
-        <a href="/2018/02/09/2/2/" class="archive-article-date">
+        <a href="/2018/02/09/tp-runtime/" class="archive-article-date">
   	<time datetime="2018-02-09T04:15:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-09</time>
 </a>
         
@@ -177,21 +174,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <style>
-img{
-    width:80%;
-    padding-left: 20%;
-}
-</style>
-
-
-<blockquote>
-<h3 id="有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？"><a href="#有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？" class="headerlink" title="有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？"></a>有一些小伙伴在直达站或者移动站制作过程中会出现这种问题，明明已经在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？</h3></blockquote>
-<h3 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h3><p><img src="/2018/02/09/2/2/yilia/source/1.png"><br><img src="/img/2.png"><br>/img/2.png</p>
-<p>####<font color="red">后台已推荐，前台死活不显示！！！</font>#####</p>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>/img/3.png</p>
-<p>####录完资料一定记得开启“开启同步“这个按钮，才能保证前台显示！！！####</p>
-<font color="red">很容易的赶脚，有木有、有木有？ 确实很简单，再细心一点，你就是建站大拿！！！</font>
+        <p>&ensp;&ensp;近期修改发现部分客户网站运行一段时间之后，出现以下问题，网站打不开，报错Runtime…</p>
+<p>例如：<font style="color:red;">RAGE_WRITE<em>ERROR</em>:./Runtime/Cache/Cnm/d6a4d19895ddcdcf73fb4962cbd5ca67.php</font></p>
+<p>解决方法：</p>
+<p><strong>1.FTP登录客户空间，删除根目录下Runtime文件夹</strong>（原则上清理了Runtime文件夹，网站就能打开了，如果不好用，请走下一步</p>
+<a id="more"></a>
+<p><strong>2.查看空间是否满了</strong>（如果空间满了可以及时客户沟通，及时对空间进行扩容，如果空间没满，请走下一步）<br><strong>3.保证runtime文件夹权限是777</strong> （看runtime文件夹的权限是否是777，不是的话，请联系支持部同学进行授权）</p>
 
       
 
@@ -261,7 +249,7 @@ img{
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/02/09/2/2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/02/09/tp-runtime/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -279,16 +267,11 @@ img{
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          《每周一课》第二期
+          在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？
         
       </div>
     </a>
   
-  
-    <a href="/2018/02/09/tp-runtime/tp-runtime/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ThinkPHP框架Runtime错误解决方法</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
