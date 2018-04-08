@@ -6,22 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://pangudev.github.io">
-  <title>网站头部报错的解决方法 | 研发一部博客</title>
+  <title>后图片上传不上去解决办法 | 研发一部博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
+  <meta name="description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
 <meta name="keywords" content="每周一课">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站头部报错的解决方法">
-<meta property="og:url" content="https://pangudev.github.io/2018/04/08/fourth/index.html">
+<meta property="og:title" content="后图片上传不上去解决办法">
+<meta property="og:url" content="https://pangudev.github.io/2018/04/08/five/index.html">
 <meta property="og:site_name" content="研发一部博客">
-<meta property="og:description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
-<meta property="og:image" content="https://pangudev.github.io/img/f1.png">
-<meta property="og:image" content="https://pangudev.github.io/img/f2.png">
-<meta property="og:updated_time" content="2018-04-08T01:06:17.074Z">
+<meta property="og:description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
+<meta property="og:image" content="https://pangudev.github.io/img/fi1.png">
+<meta property="og:image" content="https://pangudev.github.io/img/fi2.png">
+<meta property="og:image" content="https://pangudev.github.io/img/fi3.png">
+<meta property="og:updated_time" content="2018-04-08T01:39:40.532Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站头部报错的解决方法">
-<meta name="twitter:description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
-<meta name="twitter:image" content="https://pangudev.github.io/img/f1.png">
+<meta name="twitter:title" content="后图片上传不上去解决办法">
+<meta name="twitter:description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
+<meta name="twitter:image" content="https://pangudev.github.io/img/fi1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -157,19 +158,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-fourth" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-five" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      网站头部报错的解决方法
+      后图片上传不上去解决办法
     </h1>
   
 
         
-        <a href="/2018/04/08/fourth/" class="archive-article-date">
+        <a href="/2018/04/08/five/" class="archive-article-date">
   	<time datetime="2018-04-08T01:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-08</time>
 </a>
         
@@ -177,20 +178,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如：</p>
-<p>1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3</p>
-<p>2.Function set_magic_quotes_runtime() is deprecated in /home/bae/app/common.inc.php on line 4</p>
-<p><strong><font style="color:red;">这类问题主要出现在老版本建站源码中，当前对源码已经不再维护。</font></strong></p>
+        <p>在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：</p>
+<p style="text-align:center;"><img src="/img/fi1.png"></p>
+
 <p><strong>解决方法：当当当~~敲黑板！！！</strong></p>
-<p>1.找到config.cfg.php 文件第三行加上 @ 即可，如下</p>
-<p style="text-align:center;"><img src="/img/f1.png"></p>
+<p>1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”</p>
+<p style="text-align:center;"><img src="/img/fi2.png"></p>
 
 <a id="more"></a>
-<p>2.找到common.inc.php文件第四行加上 @ 即可，如下</p>
-<p style="text-align:center;"><img src="/img/f2.png"></p>
+<p>更改后：</p>
+<p style="text-align:center;"><img src="/img/fi3.png"></p>
 
-
-
+<p>好了这时候保存，再上传图片就好用了！</p>
 <p><strong>有木有很简单，赶紧mark起来！！！</strong></p>
 <p></p><p style="background:#FF0">请小伙伴们重视我们每周一课的发布内容，因为每一课都是我们精心挑选的大家经常会遇到的常用问题，大家学会了，能够大大提高自己的能力以及建站效率！</p>
 
@@ -262,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/04/08/fourth/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/04/08/five/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,18 +275,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/08/five/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          后图片上传不上去解决办法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/04/04/3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">怎么调整列表页的数据呢？</div>
+    <a href="/2018/04/08/fourth/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">网站头部报错的解决方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
