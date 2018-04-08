@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://pangudev.github.io">
-  <title>Archives: 2018 | 研发一部博客</title>
+  <title>网站头部报错的解决方法 | 研发一部博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="研发一部博客">
-<meta property="og:url" content="https://pangudev.github.io/archives/2018/index.html">
+  <meta name="description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
+<meta name="keywords" content="每周一课">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网站头部报错的解决方法">
+<meta property="og:url" content="https://pangudev.github.io/2018/04/08/fourth/index.html">
 <meta property="og:site_name" content="研发一部博客">
+<meta property="og:description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
+<meta property="og:image" content="https://pangudev.github.io/img/f1.png">
+<meta property="og:image" content="https://pangudev.github.io/img/f2.png">
+<meta property="og:updated_time" content="2018-04-08T01:06:17.074Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="研发一部博客">
+<meta name="twitter:title" content="网站头部报错的解决方法">
+<meta name="twitter:description" content="小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如： 1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3 2.Functio">
+<meta name="twitter:image" content="https://pangudev.github.io/img/f1.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -149,36 +157,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-fourth" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      网站头部报错的解决方法
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/08/fourth/" class="archive-article-date">
+
+        
+        <a href="/2018/04/08/fourth/" class="archive-article-date">
   	<time datetime="2018-04-08T01:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/08/fourth/">网站头部报错的解决方法</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>小伙伴们你们是不是会经常遇到网站页面上方有个报错信息呢，如：</p>
+<p>1.Warning: Cannot modify header information - headers already sent by (output started at /home/bae/app/index.php:108) in /home/bae/app/config.cfg.php on line 3</p>
+<p>2.Function set_magic_quotes_runtime() is deprecated in /home/bae/app/common.inc.php on line 4</p>
+<p><strong><font style="color:red;">这类问题主要出现在老版本建站源码中，当前对源码已经不再维护。</font></strong></p>
+<p><strong>解决方法：当当当~~敲黑板！！！</strong></p>
+<p>1.找到config.cfg.php 文件第三行加上 @ 即可，如下</p>
+<p style="text-align:center;"><img src="/img/f1.png"></p>
 
-        <div class="article-info info-on-right">
-          
+<a id="more"></a>
+<p>2.找到common.inc.php文件第四行加上 @ 即可，如下</p>
+<p style="text-align:center;"><img src="/img/f2.png"></p>
+
+
+
+<p><strong>有木有很简单，赶紧mark起来！！！</strong></p>
+<p></p><p style="background:#FF0">请小伙伴们重视我们每周一课的发布内容，因为每一课都是我们精心挑选的大家经常会遇到的常用问题，大家学会了，能够大大提高自己的能力以及建站效率！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -190,133 +212,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/04/08/fourth/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/04/3/" class="archive-article-date">
-  	<time datetime="2018-04-04T06:23:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/04/3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">怎么调整列表页的数据呢？</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/04/3/">怎么调整列表页的数据呢？</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">每周一课</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/04/2/" class="archive-article-date">
-  	<time datetime="2018-04-04T06:17:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/04/2/">在后台设置了首页推荐，但是在前台页面还是不显示，这是什么原因呢？</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">每周一课</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/09/tp-runtime/" class="archive-article-date">
-  	<time datetime="2018-02-09T04:15:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/09/tp-runtime/">ThinkPHP框架Runtime错误解决方法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">每周一课</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -339,8 +334,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
