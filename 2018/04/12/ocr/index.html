@@ -6,23 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://pangudev.github.io">
-  <title>后台图片上传不上去解决办法 | 研发一部博客</title>
+  <title>使用Python+百度OCR文字识别提取图片内容 | 研发一部博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
-<meta name="keywords" content="每周一课">
+  <meta name="description" content="工作中，我们常常会将图片中的文字整理成word文档，过去主要依靠人工识别，费时费力，随着人工智能技术的发展，OCR文字识别的准确度越来越高，此项工作完全可以交给系统来完成了，下面是一段Python版的文字识别代码，使用了百度的“百度文字识别接口”。 1234567891011121314151617181920212223242526272829303132333435363738394041#">
+<meta name="keywords" content="人工智能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="后台图片上传不上去解决办法">
-<meta property="og:url" content="https://pangudev.github.io/2018/04/08/five/index.html">
+<meta property="og:title" content="使用Python+百度OCR文字识别提取图片内容">
+<meta property="og:url" content="https://pangudev.github.io/2018/04/12/ocr/index.html">
 <meta property="og:site_name" content="研发一部博客">
-<meta property="og:description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
-<meta property="og:image" content="https://pangudev.github.io/img/fi1.png">
-<meta property="og:image" content="https://pangudev.github.io/img/fi2.png">
-<meta property="og:image" content="https://pangudev.github.io/img/fi3.png">
-<meta property="og:updated_time" content="2018-04-12T03:09:03.982Z">
+<meta property="og:description" content="工作中，我们常常会将图片中的文字整理成word文档，过去主要依靠人工识别，费时费力，随着人工智能技术的发展，OCR文字识别的准确度越来越高，此项工作完全可以交给系统来完成了，下面是一段Python版的文字识别代码，使用了百度的“百度文字识别接口”。 1234567891011121314151617181920212223242526272829303132333435363738394041#">
+<meta property="og:updated_time" content="2018-04-12T03:11:49.196Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="后台图片上传不上去解决办法">
-<meta name="twitter:description" content="在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：   解决方法：当当当~~敲黑板！！！ 1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”">
-<meta name="twitter:image" content="https://pangudev.github.io/img/fi1.png">
+<meta name="twitter:title" content="使用Python+百度OCR文字识别提取图片内容">
+<meta name="twitter:description" content="工作中，我们常常会将图片中的文字整理成word文档，过去主要依靠人工识别，费时费力，随着人工智能技术的发展，OCR文字识别的准确度越来越高，此项工作完全可以交给系统来完成了，下面是一段Python版的文字识别代码，使用了百度的“百度文字识别接口”。 1234567891011121314151617181920212223242526272829303132333435363738394041#">
   
   
     <link rel="icon" href="/favicon.png">
@@ -158,40 +154,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-five" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-ocr" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      后台图片上传不上去解决办法
+      使用Python+百度OCR文字识别提取图片内容
     </h1>
   
 
         
-        <a href="/2018/04/08/five/" class="archive-article-date">
-  	<time datetime="2018-04-08T01:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-08</time>
+        <a href="/2018/04/12/ocr/" class="archive-article-date">
+  	<time datetime="2018-04-12T03:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在2.0的网站中，有不少小伙伴在上传图片的时候会遇到一个问题，那就是上传不上去如下图：</p>
-<p style="text-align:center;"><img src="/img/fi1.png"></p>
-
-<p><strong>解决方法：当当当~~敲黑板！！！</strong></p>
-<p>1.找到根目录下的upload_flash.php文件找到此处16行做如下更改把ereg 改成preg_match  把双引号里面的内容头尾两侧各加一个“/”</p>
-<p style="text-align:center;"><img src="/img/fi2.png"></p>
-
-<a id="more"></a>
-<p>更改后：</p>
-<p style="text-align:center;"><img src="/img/fi3.png"></p>
-
-<p>好了这时候保存，再上传图片就好用了！</p>
-<p><strong>有木有很简单，赶紧mark起来！！！</strong></p>
-<p></p><p style="background:#FF0">请小伙伴们重视我们每周一课的发布内容，因为每一课都是我们精心挑选的大家经常会遇到的常用问题，大家学会了，能够大大提高自己的能力以及建站效率！</p>
+        <p>工作中，我们常常会将图片中的文字整理成word文档，过去主要依靠人工识别，费时费力，随着人工智能技术的发展，OCR文字识别的准确度越来越高，此项工作完全可以交给系统来完成了，下面是一段Python版的文字识别代码，使用了百度的“百度文字识别接口”。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding:utf-8 -*-</span><br><span class="line">from aip import AipOcr</span><br><span class="line"></span><br><span class="line">&apos;&apos;&apos; 你的 APPID AK SK &apos;&apos;&apos;</span><br><span class="line">APP_ID = &apos;你的 App ID&apos;</span><br><span class="line">API_KEY = &apos;你的 Api Key&apos;</span><br><span class="line">SECRET_KEY = &apos;你的 Secret Key&apos;</span><br><span class="line"></span><br><span class="line">aipOcr = AipOcr(APP_ID, API_KEY, SECRET_KEY)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 读取图片</span><br><span class="line">def get_file_content(filePath):</span><br><span class="line">    with open(filePath, &apos;rb&apos;) as fp:</span><br><span class="line">        return fp.read()</span><br><span class="line"></span><br><span class="line">img = get_file_content(&apos;E://20171017152738.jpg&apos;)</span><br><span class="line"></span><br><span class="line"># 调用通用文字识别接口</span><br><span class="line">result = aipOcr.basicGeneral(img)</span><br><span class="line"></span><br><span class="line"># 如果有可选参数</span><br><span class="line">options = &#123;&#125;</span><br><span class="line">options[&quot;language_type&quot;] = &quot;CHN_ENG&quot; # 识别语言类型 默认 中英混合</span><br><span class="line">options[&quot;detect_direction&quot;] = &quot;true&quot; # 是否检测图像朝向 默认不检测</span><br><span class="line">options[&quot;detect_language&quot;] = &quot;true&quot;  # 是否检测语言，默认不检测。当前支持（中文、英语、日语、韩语）</span><br><span class="line">options[&quot;probability&quot;] = &quot;true&quot;      # 是否返回识别结果中每一行的置信度</span><br><span class="line"></span><br><span class="line"># 调用通用文字识别接口,同时携带可选参数</span><br><span class="line">#result = aipOcr.basicGeneral(img, options)</span><br><span class="line"></span><br><span class="line"># 获取返回识别结果</span><br><span class="line">if isinstance(result, dict):</span><br><span class="line">    print result</span><br><span class="line">    print &apos;##########&apos;</span><br><span class="line">    words = result[&apos;words_result&apos;]</span><br><span class="line">print words</span><br><span class="line"></span><br><span class="line"># 如果图片是url 调用示例如下</span><br><span class="line">#result = apiOcr.basicGeneral(&apos;http://www.xxxxxx.com/img.jpg&apos;)</span><br></pre></td></tr></table></figure>
+<p>百度文字识别还提供了许多其他接口，例如：通用文字识别（高精度版），网络图片文字识别，身份证识别，银行卡识别，车牌识别，营业执照识别，表格文字识别等。感兴趣的朋友可以到百度AI开放平台查找相关使用说明。</p>
 
       
 
@@ -205,7 +190,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">每周一课</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人工智能</a>
         		</li>
       		
 		</ul>
@@ -261,7 +246,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/04/08/five/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://pangudev.github.io/2018/04/12/ocr/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -275,18 +260,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/12/ocr/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用Python+百度OCR文字识别提取图片内容
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/04/08/fourth/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">网站头部报错的解决方法</div>
+    <a href="/2018/04/08/five/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">后台图片上传不上去解决办法</div>
       <i class="icon-circle-right"></i>
     </a>
   
